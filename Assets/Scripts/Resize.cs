@@ -22,7 +22,6 @@ public class Resize : MonoBehaviour
     [SerializeField]
     [Tooltip("Minimum size")]
     private float MinimumSize = 1f;
-
     private int flag = 1;
 
     // Update is called once per frame
