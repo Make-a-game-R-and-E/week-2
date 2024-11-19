@@ -9,8 +9,8 @@ public class ExitGame : MonoBehaviour
         // Exit Play Mode in the Unity Editor
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-            // Close the application
-            Application.Quit();
+        // Close the application
+        Application.Quit();
 #endif
     }
 }

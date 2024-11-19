@@ -4,11 +4,15 @@ using UnityEngine.InputSystem;
 public class Interaction : MonoBehaviour
 {
     [SerializeField]
-    InputAction action = new InputAction("action", type: InputActionType.Button, "<Keyboard>/space");
-    
+    private InputAction action = new InputAction(
+        "action",
+        type: InputActionType.Button,
+        binding: "<Keyboard>/space"
+    );
+
     private void OnEnable()
     {
-        action.Enable(); 
+        action.Enable();
     }
 
     private void OnDisable()
@@ -16,12 +20,12 @@ public class Interaction : MonoBehaviour
         action.Disable();
     }
 
-    void Update()
+    private void Update()
     {
         if (action.WasPressedThisFrame())
         {
-            SpriteRenderer SR = GetComponent<SpriteRenderer>();
-            SR.enabled = !SR.enabled;
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+            sr.enabled = !sr.enabled;
         }
     }
 }
