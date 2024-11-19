@@ -1,4 +1,4 @@
-# Week 2 Assignment
+# Week 2 Assignment   
 
 This week's assignment is divided into two main parts: **object manipulation** and **player mechanics with a minimap**. Below are the detailed requirements for each part.
 
