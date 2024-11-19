@@ -8,7 +8,7 @@ public class Interaction : MonoBehaviour
     
     private void OnEnable()
     {
-        action.Enable();
+        action.Enable(); 
     }
 
     private void OnDisable()
